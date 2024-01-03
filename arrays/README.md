@@ -19,6 +19,7 @@
 import array
 balance = array.array('i', [300, 200, 100])
 print (balance)
+```
 
 - __balance__ is the array name
 - __array.array__ is the module
@@ -29,6 +30,7 @@ print (balance)
 ###Syntax
 ```python
 arrayName[indexNum]
+```
 
 ##Array operations
 ### Insert
@@ -38,6 +40,7 @@ end,or any given index of the array
 ###Syntax
 ```python
 arrayName.insert(index, value)
+```
 - This adds a new value to an array
 
 ###Delete
@@ -46,6 +49,7 @@ You can delete one item from an array by value
 ###Syntax
 ```python
 arrayName.remove(value)
+```
 
 ###searching
 With this operation, you can search for an item in an array based on its value.
@@ -53,3 +57,4 @@ With this operation, you can search for an item in an array based on its value.
 ###Syntax
 ```python
 arrayName.index(values)
+```
