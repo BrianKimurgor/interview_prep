@@ -58,3 +58,37 @@ With this operation, you can search for an item in an array based on its value.
 ```python
 arrayName.index(values)
 ```
+###Update
+This operation replaces the existing value at the given index
+thus assigning a new value at the given index
+- This method accepts two values, index and value
+###Syntax
+```python
+arrayName.update(index, value)
+```
+###Traverse
+you can traverse a python array using loops
+```python
+import array
+balance = array.array('i', [3, 200, 340])
+for x in balance:
+    print (x)
+    ```
+###Output
+```python
+3
+200
+340
+```
+##Big O
+# Time Complexity of Array Operations
+
+| Operation              | Big-O       | Note                                                                                           |
+|------------------------|-------------|------------------------------------------------------------------------------------------------|
+| Access                 | O(1)        | Constant time complexity for accessing an element by its index.                                |
+| Search                 | O(n)        | Linear time complexity for searching an element in an unsorted array.                           |
+| Search (sorted array)  | O(log(n))   | Logarithmic time complexity for searching an element in a sorted array using binary search.      |
+| Insert                 | O(n)        | Linear time complexity. Insertion requires shifting all subsequent elements to the right.        |
+| Insert (at the end)    | O(1)        | Constant time complexity for inserting an element at the end when no shifting is required.       |
+| Remove                 | O(n)        | Linear time complexity. Removal requires shifting all subsequent elements to the left.            |
+| Remove (at the end)    | O(1)        | Constant time complexity for removing the last element when no shifting is required.             |
