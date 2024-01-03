@@ -92,3 +92,25 @@ for x in balance:
 | Insert (at the end)    | O(1)        | Constant time complexity for inserting an element at the end when no shifting is required.       |
 | Remove                 | O(n)        | Linear time complexity. Removal requires shifting all subsequent elements to the left.            |
 | Remove (at the end)    | O(1)        | Constant time complexity for removing the last element when no shifting is required.             |
+
+##Impact of Duplicate Values:
+- Search Operation: If you're searching for a specific value in an array with duplicate values, you might need to traverse
+ the entire array to find all occurrences of that value. This would still be O(n) in the worst case, as you might need to examine each element.
+
+- Remove Operation: When removing a specific value from an array with duplicates, you might have to shift multiple elements
+ to the left every time you remove an occurrence of that value. This could potentially increase the time complexity
+ from O(n) to O(n^2) in the worst-case scenario where you need to shift elements for each occurrence.
+
+- Insert Operation: Inserting an element might not be affected significantly by duplicates unless you have to maintain
+ a sorted array or some specific order. In such cases, inserting might still require shifting elements, but the presence
+  of duplicates doesn't inherently make it more complex.
+
+- Simplification or Complication:-
+Simpler: In some scenarios, knowing that duplicates are allowed might simplify the problem because you may not need to worry
+ about unique elements or maintaining order as strictly.
+
+Harder: On the other hand, when you have to perform operations like removing or searching for a specific value, the presence
+of duplicates can make the algorithm more complex and less efficient, potentially increasing the time complexity.
+
+In summary, while the presence of duplicate values might simplify certain aspects (like not needing to maintain uniqueness),
+ it can complicate operations where you need to search for or remove specific values efficiently, potentially affecting the time complexity.
