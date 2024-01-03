@@ -19,3 +19,37 @@
 import array
 balance = array.array('i', [300, 200, 100])
 print (balance)
+
+- __balance__ is the array name
+- __array.array__ is the module
+- __'i'__ is the data type
+- the values in brackets are the elements
+
+## Accessing specific array values
+###Syntax
+```python
+arrayName[indexNum]
+
+##Array operations
+### Insert
+With this operation, you can insert one or more items into an array at the beginning,
+end,or any given index of the array
+- This method expects an index and a values
+###Syntax
+```python
+arrayName.insert(index, value)
+- This adds a new value to an array
+
+###Delete
+You can delete one item from an array by value
+- This method accepts only one argument, the value
+###Syntax
+```python
+arrayName.remove(value)
+
+###searching
+With this operation, you can search for an item in an array based on its value.
+- This method accepts only one argument, the value, it does not affect array values
+###Syntax
+```python
+arrayName.index(values)
